@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Kellys' Loyal Family Constitution</title>
+    <!-- Include html2pdf library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #16a085;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: var(--dark-color);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 10px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        .motto {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: var(--accent-color);
+            margin-top: 40px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #ddd; font-style: italic;
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            margin-top: 30px;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        ul li a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+}
+ul li a:hover {
+  text-decoration: underline;
+}
+        .declaration {
+            background-color: var(--light-color);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 40px 0;
+            text-align: center;
+            font-weight: bold;
+            border-left: 5px solid var(--accent-color);
+        }
+        
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        
+        .action-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .action-button:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+        
+        .action-button.secondary {
+            background-color: var(--secondary-color);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .action-button {
+                width: 100%;
+            }
+        }
+        
+        /* Print-specific styles */
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            
+            .action-buttons {
+                display: none;
+            }
+            
+            .declaration {
+                page-break-inside: avoid;
+            }
+            
+            h2 {
+                page-break-after: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="content-to-print">
+        <header>
+            <h1>The Kellys' Loyal Family Constitution</h1>
+            <p class="motto">God is always our lead!</p>
+        </header>
+
+        <section>
+            <h2>Our Identity</h2>
+            <p>We are not Royal - we are Loyal to God.</p>
+            <p>We are a united people, bound by purpose, faith, and a vision that stretches beyond our time, across borders, and into the future.</p>
+            <p>We exist to leave behind more than names - we build a legacy of light that reaches generations of the world and brings smiles to the many.</p>
+        </section>
+
+        <section>
+            <h2>Why We Exist</h2>
+            <p>This is not just about us - it's about the world that comes after us.</p>
+            <p>Our choices, values, and actions today must ripple through generations - inspiring, healing, building, and blessing.</p>
+            
+            <p>We exist:</p>
+            <ul>
+                <li>To stand for truth in a broken world.</li>
+                <li>To raise leaders rooted in loyalty, not power.</li>
+                <li>To serve humanity with love, wisdom, and responsibility.</li>
+                <li>To build projects that outlive us, <strong><em><a href="projects.html">See The 5 Unified Kellys' Loyal Projects.</a></em></strong>.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Our Core Values</h2>
+            <ul>
+                <li><strong>Faith in God</strong> - Our foundation and compass.</li>
+                <li><strong>Global Vision</strong> - We think beyond ourselves.</li>
+                <li><strong>Unity in Purpose</strong> - We build with one heart.</li>
+                <li><strong>Service</strong> - We exist to uplift others.</li>
+                <li><strong>Integrity</strong> - We keep our word, always.</li>
+                <li><strong>Responsibility</strong> - Each of us is a link in a global chain.</li>
+                <li><strong>Sustainability</strong> - What we build must last.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Our Vision</h2>
+            <p>To raise a people whose loyalty to God and to good causes brings healing, leadership, and sustainable impact to generations of the world.</p>
+        </section>
+
+        <section>
+            <h2>Our Mission</h2>
+            <p>We are on a mission to:</p>
+            <ul>
+                <li>Build and support projects that educate, heal, and empower.</li>
+                <li>Promote peace, equity, and justice wherever we are.</li>
+                <li>Be examples in speech, action, and legacy.</li>
+                <li>Connect and collaborate with other communities for global good.</li>
+                <li>Pass down a living light, not just a name.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Global Projects for Generational Impact</h2>
+            <p>Our work isn't for applause - it's for generations. We are building and supporting <a href="projects.html">The 5 Unified Kellys' Loyal Family's projects</a> that will serve people long after we are gone:</p>
+<ul>
+  <li><a href="foundation.html">The Kellys' Loyal Foundation</a></li>
+  <li><a href="farms.html">The Kellys' Loyal Farms</a></li>
+  <li><a href="medical.html">The Kellys' Loyal Medical Center</a></li>
+  <li><a href="schools.html">The Kellys' Loyal Schools<br>
+    <small>(Includes Bible School and other Loyal Schools)</small></a>
+  </li>
+  <li><a href="testimonies.html">The Kellys' Loyal Testimonies</a></li>
+</ul>
+        </section>
+
+        <section>
+            <h2>Participation Across Generations</h2>
+            <p>This movement is not for spectators. We welcome all ages, backgrounds, and nations who share our values to:</p>
+            <ul>
+                <li>Join the mission.</li>
+                <li>Serve in action and wisdom.</li>
+                <li>Plant trees they may never sit under.</li>
+                <li>Think legacy, not likes.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Leadership & Decisions</h2>
+            <p>We lead with servant hearts. Decisions are made with transparency, unity, and accountability. Everyone's input matters when the goal is generational impact.</p>
+        </section>
+
+        <section>
+            <h2>Resources & Stewardship</h2>
+            <p>All resources are used for people, not pride. Donations, time, talents, and partnerships are stewarded with integrity. Reports are made clear and accessible.</p>
+        </section>
+
+        <section>
+            <h2>When Conflict Arises</h2>
+            <p>We pursue truth with grace. We aim to restore, not destroy. We will never let division cancel destiny.</p>
+        </section>
+
+        <section>
+            <h2>Living Constitution</h2>
+            <p>This document is not a cage - it's a guide. It can grow and evolve with wisdom, through majority agreements, as long as it stays loyal to our God-given purpose.</p>
+        </section>
+
+        <div class="declaration">
+            <p>We are The Kellys' Loyal Family.</p>
+            <p>We are not building for applause -</p>
+            <p>We are building for generations of the world.</p>
+            <p>God is always our lead!</p>
+        </div>
+    </div>
+
+    <div class="action-buttons">
+        <button onclick="generatePDF()" class="action-button">Download this Constitution as PDF.</button>
+        <a href="index.html" class="action-button secondary">Back to Home</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        function generatePDF() {
+            // Get the element to print
+            const element = document.getElementById('content-to-print');
+            
+            // Options for PDF generation
+            const opt = {
+                margin: 10,
+                filename: 'The-Kellys-Loyal-Family-Constitution.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            
+            // Generate PDF
+            html2pdf().set(opt).from(element).save();
+        }
+    </script>
+</body>
+</html>
